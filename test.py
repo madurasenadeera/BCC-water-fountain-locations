@@ -11,5 +11,11 @@ with open('/Users/madurasenadeera/github/BCC-water-fountain-locations/data/20181
         lat.append(value[9])
         long.append(value[10])
 
-print lat
-print long
+# print lat
+# print long
+
+
+mymap = pygmaps.gmap(39.0194, 125.7381, 8)
+mymap.add_point(39.0194, 125.7381, title="test")
+#mymap.add_point(37.5665, 126.978)
+mymap.draw('./mymap.html')
